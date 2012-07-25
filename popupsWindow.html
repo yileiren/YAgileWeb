@@ -12,13 +12,8 @@
         <script type="text/javascript" src="jquery-easyui/jquery.easyui.min.js"></script>
         <script type="text/javascript" src="YWindows.js"></script>
         <script>
-            $(function(){
-                $('#dd').dialog({
-                    //href:"changePassword.html"
-                });
-            });
             function open1(str){
-                popupsWindow('#dd','test',800,600,str,'icon-save',true,true);
+                popupsWindow('#dd','测试页面',800,600,str,'icon-save',true,true);
                 // $('#dd').dialog({
                     // title:'test',
                     // width:800,
@@ -43,9 +38,8 @@
         
         <div style="margin:10px 0;">
             <a href="#" class="easyui-linkbutton" onclick="open1('changePassword.html')">Open</a>
-            <a href="#" class="easyui-linkbutton" onclick="close1()">Close</a>
         </div>
-        <div id="dd" icon="icon-save" style="padding:5px;width:400px;height:200px;">
+        <div id="dd" class="easyui-dialog" closed="true" style="padding:5px">
             <p>dialog content.</p>
             <p>dialog content.</p>
             <p>dialog content.</p>
@@ -54,27 +48,6 @@
             <p>dialog content.</p>
             <p>dialog content.</p>
             <p>dialog content.</p>
-        </div>
-        <div id="d2" class="easyui-dialog" title="Another Dialog" style="width:400px;height:200px;left:100px;top:150px;padding:10px"
-                toolbar="#dlg-toolbar" buttons="#dlg-buttons" resizable="true">
-            Dialog toolbar and buttons are created from existing HTML nodes.
-        </div>
-        <div id="dlg-toolbar" style="padding:2px 0">
-            <table cellpadding="0" cellspacing="0" style="width:100%">
-                <tr>
-                    <td style="padding-left:2px">
-                        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">Edit</a>
-                        <a href="#" class="easyui-linkbutton" iconCls="icon-help" plain="true">Help</a>
-                    </td>
-                    <td style="text-align:right;padding-right:2px">
-                        <input class="easyui-searchbox"></input>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="dlg-buttons">
-            <a href="#" class="easyui-linkbutton" onclick="javascript:alert('save')">Save</a>
-            <a href="#" class="easyui-linkbutton" onclick="javascript:$('#d2').dialog('close')">Close</a>
         </div>
     </body>
 </html>

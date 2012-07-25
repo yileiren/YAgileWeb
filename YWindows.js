@@ -9,6 +9,11 @@
 /*!
  * \brief
  * 弹出窗口。
+ * 作者：董帅 创建时间：2012-7-25 22:57:20
+ * 
+ * 窗口代码示例：
+ * <div id="dd" class="easyui-dialog" closed="true" style="padding:5px">
+ * </div>
  * 
  * \param windowId 窗口id，使用string类型。
  * \param titleName 标题名称，使用string类型。
@@ -28,7 +33,8 @@ function popupsWindow(windowId,titleName,windowWidth,windowHeight,pageUrl,window
         iconCls:windowIcon,
         href:pageUrl,
         closable:allowClose,
-        modal:isModal
+        modal:isModal,
+        closed:false
    });
 }
 
